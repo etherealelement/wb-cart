@@ -191,15 +191,15 @@ body {
 
 
 .real-checkbox:focus + .custom-checkbox {
-    box-shadow: 0px 0px 0px 1px #6725a8, 0px 0px 10px #fff;
+    box-shadow: 0px 0px 0px 1px #fff, 0px 0px 10px #fff;
 }
 
 .custom-checkbox {
 	display: inline-block;
 	width: 22px;
 	height: 22px;
-	background-color: var(--system-magenta);
-    border: 2px solid var(--system-magenta);
+	background-color: inherit;
+    border: 2px solid #686767;
     border-radius: 6px;
     vertical-align: sub;
     position: relative;
@@ -212,9 +212,10 @@ body {
 	height: 13px;
     background-image: url("../../public/images/checkbox-arrow.svg");
     background-size: contain;
-    background-color: var(--system-magenta);
+    object-fit: cover;
     background-repeat: no-repeat;
     position: absolute;
+    border-radius: 6px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) scale(0);
@@ -223,4 +224,9 @@ body {
 
 .real-checkbox:checked + .custom-checkbox::before {
     transform: translate(-50%, -50%) scale(1);
+}
+
+.real-checkbox:checked + .custom-checkbox {
+    background-color: var(--system-magenta);
+    border: 2px solid var(--system-magenta);
 }
