@@ -1,0 +1,146 @@
+
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+
+
+
+body {
+	font-family: Segoe UI, serif, sans-serif;
+    font-weight: 400;
+    background: #6725a8;
+}
+
+.container {
+	padding: 34px 25px 50px;
+}
+
+:root {
+	--violet: #6725a8;
+	--text-black: #000;
+	--system-magenta: #cb11ab;
+	--dark-system-coral: #ff3b30;
+	--system-white: #fff;
+}
+
+/* header */
+
+.header {
+	background-color: #6725a8;
+	padding: 20px 38px 20px;
+}
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+}
+
+.header__box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 16px;
+}
+
+.header__title {
+	min-width: 106px;
+	color: var(--system-white);
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 24px;
+	font-variant: all-small-caps;
+	letter-spacing: 0.56px;
+    text-transform: uppercase;
+}
+
+.header__input {
+    min-width: 100%;
+    flex: 1;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header__profile {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    align-items: center;
+}
+
+.header__profile-text {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    color: var(--system-white, #FFF);
+}
+
+.header__profile, .header__cart {
+    background: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.header__cart {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    align-items: center;
+}
+
+.header__cart-span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 12px;
+    height: 18px;
+    top: -6px;
+    color: var(--system-white);
+    right: 3px;
+    border-radius: 16px;
+    padding: 10px;
+    background:#F55123;
+}
+
+.header__input-wrapper {
+    display: flex;
+    flex-grow: 0.9;
+    position: relative;
+}
+
+
+.header__input {
+    border-radius: 36px;
+    background: rgba(255, 255, 255, 0.20);
+    padding: 10px 30px 14px 20px;
+    min-height: 49px;
+    width: 100%;
+    border: none;
+    outline: none;
+    min-width: 554px;
+}
+
+.header__input::placeholder{
+    color: var(--system-white);
+    opacity: 0.5;
+}
+
+
+.header__input-span {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 12px;
+    right: 19px;
+}
