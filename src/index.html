@@ -1,82 +1,427 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/styles/reset.css">
-    <link rel="stylesheet" href="/src/styles/fonts.css">
-    <link rel="stylesheet" href="/src/styles/style.css">
-    <title>wb-cart</title>
-</head>
-<body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header__inner">
-            <div class="header__box">
-                <div class="header__burger">
-                    <img src="../public/catalog_burger.png" alt="cart_icon">
-                </div>
-                <h1 class="header__title">Товары <br>и точка</h1>
-            </div>
-                <div class="header__input-wrapper">
-                    <input type="text" class="header__input" placeholder="Я ищу...">
-                    <span class="header__input-span">
-                        <img src="../public/images/search.svg" alt="search_icon">
-                    </span>
-                </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/src/styles/reset.css" />
+		<link rel="stylesheet" href="/src/styles/fonts.css" />
+		<link rel="stylesheet" href="/src/styles/style.css" />
+		<title>wb-cart</title>
+	</head>
+	<body>
+		<!-- Header -->
+		<header class="header">
+			<div class="header__inner">
+				<div class="header__box">
+					<div class="header__burger">
+						<img
+							src="../public/catalog_burger.png"
+							alt="cart_icon"
+						/>
+					</div>
+					<h1 class="header__title">Товары <br />и точка</h1>
+				</div>
+				<div class="header__input-wrapper">
+					<input
+						type="text"
+						class="header__input"
+						placeholder="Я ищу..."
+					/>
+					<span class="header__input-span">
+						<img
+							src="../public/images/search.svg"
+							alt="search_icon"
+						/>
+					</span>
+				</div>
 
+				<div class="header__wrapper">
+					<button class="header__profile">
+						<img
+							src="/public/images/user-icon.svg"
+							alt="user_icon"
+						/>
+						<p class="header__profile-text">Профиль</p>
+					</button>
+					<button class="header__cart">
+						<img
+							src="/public/images/cart-icon.svg"
+							alt="user_icon"
+						/>
+						<span class="header__cart-span">3</span>
+						<p class="header__profile-text">Корзина</p>
+					</button>
+				</div>
+			</div>
+		</header>
+		<!-- Main -->
+		<main class="main">
+			<div class="container">
+				<!-- cart -->
+				<section class="cart">
+					<div class="orders">
+						<h2 class="orders__title">Корзина</h2>
+						<!-- custom checkbox -->
+						<div class="orders__box">
+							<label class="checkbox__wrap">
+								<input type="checkbox" class="real-checkbox" />
+								<span class="custom-checkbox"></span>
+								Выбрать все
+							</label>
+							<img
+								src="../public/images/arrow-icon.svg"
+								alt="arrow-icon"
+							/>
+						</div>
+						<!-- orders list and orders items -->
+						<ul class="orders__list">
+							<li class="orders__item">
+								<div class="order__item_inner">
+									<label class="checkbox__wrap-custom">
+										<input
+											type="checkbox"
+											class="real-checkbox"
+										/>
+										<span class="custom-checkbox"></span>
+									</label>
+									<div class="orders__item-box">
+										<img
+											src="../public/images/cart-item-1.png"
+											alt="item-photo"
+											class="orders__item-img"
+										/>
 
-            <div class="header__wrapper">
-                <button class="header__profile">
-                    <img src="/public/images/user-icon.svg" alt="user_icon">
-                    <p class="header__profile-text">Профиль</p>
-                </button>
-                <button class="header__cart">
-                    <img src="/public/images/cart-icon.svg" alt="user_icon">
-                    <span class="header__cart-span">3</span>
-                    <p class="header__profile-text">Корзина</p>
-                </button>
-            </div>
-        </div>
-    </header>
-    <!-- Main -->
-    <main class="main">
-        <div class="container">
-            <!-- cart -->
-            <section class="cart">
-                <div class="orders">
-                    <h2 class="orders__title">Корзина</h2>
-                    <!-- custom checkbox -->
-                    <div class="orders__box">
-                        <label class="checkbox__wrap">
-                            <input type="checkbox" class="real-checkbox">
-                            <span class="custom-checkbox"></span>
-                            Выбрать все
-                        </label>
-                        <img src="../public/images/arrow-icon.svg" alt="arrow-icon">
-                    </div>
-                    <!-- orders list and orders items -->
-                    <ul class="orders__list">
-                        <li class="orders__item">
+										<div class="order__container">
+											<h3 class="order__container-titile">
+												Футболка UZcotton мужская
+											</h3>
+											<div class="text__container">
+												<p class="cart__text">
+													Цвет: белый
+												</p>
+												<p class="cart__text">
+													Размер: 56
+												</p>
+											</div>
+											<p class="order__container_descr">
+												Коледино WB
+											</p>
+											<div class="place__container">
+												<p
+													class="order__container_place"
+												>
+													OOO Вайлдберриз
+												</p>
+												<img
+													src="../public/images/icon-20.svg"
+													alt="icon"
+												/>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- counter -->
+								<div class="orders__wrap">
+									<div class="order__counter">
+										<div class="order__counter-container">
+											<button class="order__counter-btn">
+												-
+											</button>
+											<span class="order__counter-spn"
+												>1</span
+											>
+											<button
+												class="order__counter-btn-disable"
+											>
+												+
+											</button>
+										</div>
+										<p class="order__counter-text">
+											Осталось 2 шт.
+										</p>
+										<!-- wrapper -->
+										<div class="order__wrap">
+											<button class="order__wrap_btn">
+												<img
+													src="/public/images/icon-hurt.svg"
+													alt="icon-hurt"
+												/>
+											</button>
+											<button class="order__wrap_btn">
+												<img
+													src="/public/images/icon-trash.svg"
+													alt="icon-trash"
+												/>
+											</button>
+										</div>
+									</div>
+									<!-- total-price -->
+									<div class="order__total">
+										<h4 class="order__total-price">
+											522 сом
+										</h4>
+										<p class="order__total-ghost">
+											1051 сом
+										</p>
+									</div>
+								</div>
+							</li>
+							<li class="orders__item">
+								<div class="order__item_inner">
+									<label class="checkbox__wrap-custom-2">
+										<input
+											type="checkbox"
+											class="real-checkbox"
+										/>
+										<span class="custom-checkbox"></span>
+									</label>
+									<div class="orders__item-box">
+										<img
+											src="../public/images/cart-item-2.png"
+											alt="item-photo"
+											class="orders__item-img"
+										/>
 
-                        </li>
-                        <li class="orders__item">
+										<div class="order__container">
+											<h3 class="order__container-titile">
+												Силиконовый чехол картхолдер<br> (отверстия) для карт, прозрачный<br> кейс бампер на Apple iPhone XR,<br> MobiSafe
+											</h3>
+											<div class="text__container">
+												<p class="cart__text">
+													Цвет: прозрачный
+												</p>
+											
+											</div>
+											<p class="order__container_descr">
+												Коледино WB
+											</p>
+											<div class="place__container">
+												<p
+													class="order__container_place"
+												>
+                                                OOO Мегапрофстиль
+												</p>
+												<img
+													src="../public/images/icon-20.svg"
+													alt="icon"
+												/>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- counter -->
+								<div class="orders__wrap">
+									<div class="order__counter">
+										<div class="order__counter-container">
+											<button class="order__counter-btn">
+												-
+											</button>
+											<span class="order__counter-spn"
+												>200</span
+											>
+											<button
+												class="order__counter-btn"
+											>
+												+
+											</button>
+										</div>
+										
+										<!-- wrapper -->
+										<div class="order__wrap">
+											<button class="order__wrap_btn">
+												<img
+													src="/public/images/icon-hurt.svg"
+													alt="icon-hurt"
+												/>
+											</button>
+											<button class="order__wrap_btn">
+												<img
+													src="/public/images/icon-trash.svg"
+													alt="icon-trash"
+												/>
+											</button>
+										</div>
+									</div>
+									<!-- total-price -->
+									<div class="order__total">
+										<h4 class="order__total-price">
+											2 100 047 сом
+										</h4>
+										<p class="order__total-ghost">
+											2 300 047 сом
+										</p>
+									</div>
+								</div>
+							</li>
+							<li class="orders__item">
+								<div class="order__item_inner">
+									<label class="checkbox__wrap-custom-3">
+										<input
+											type="checkbox"
+											class="real-checkbox"
+										/>
+										<span class="custom-checkbox"></span>
+									</label>
+									<div class="orders__item-box">
+										<img
+											src="../public/images/cart-item-3.png"
+											alt="item-photo"
+											class="orders__item-img"
+										/>
 
-                        </li>
-                        <li class="orders__item">
+										<div class="order__container">
+											<h3 class="order__container-titile">
+												Карандаши цветные Faber-Castell<br> "Замок", набор 24 цвета,<br> заточенные, шестигранные,<br>Faber-Castell 
+											</h3>
+											
+											<p class="order__container_descr">
+												Коледино WB
+											</p>
+											<div class="place__container">
+												<p
+													class="order__container_place"
+												>
+													OOO Вайлдберриз
+												</p>
+												<img
+													src="../public/images/icon-20.svg"
+													alt="icon"
+												/>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- counter -->
+								<div class="orders__wrap">
+									<div class="order__counter">
+										<div class="order__counter-container">
+											<button class="order__counter-btn">
+												-
+											</button>
+											<span class="order__counter-spn"
+												>2</span
+											>
+											<button
+												class="order__counter-btn-disable"
+											>
+												+
+											</button>
+										</div>
+										<p class="order__counter-text">
+											Осталось 2 шт.
+										</p>
+										<!-- wrapper -->
+										<div class="order__wrap">
+											<button class="order__wrap_btn">
+												<img
+													src="/public/images/icon-hurt.svg"
+													alt="icon-hurt"
+												/>
+											</button>
+											<button class="order__wrap_btn">
+												<img
+													src="/public/images/icon-trash.svg"
+													alt="icon-trash"
+												/>
+											</button>
+										</div>
+									</div>
+									<!-- total-price -->
+									<div class="order__total">
+										<h4 class="order__total-price">
+											494 сом
+										</h4>
+										<p class="order__total-ghost">
+											950 сом
+										</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+                        <!-- absence items -->
+                        <div class="ubsence">
+                            <div class="ubsence__inner">
+                                <h4 class="ubsence__title">
+                                    Отсутствуют · 3 товара
+                                </h4>
+                                <img src="../public/images/arrow-icon.svg" alt="arrow-icon">
+                            </div>
 
-                        </li>
-                    </ul>
+                            <ul class="ubsence__list">
+                                <li class="ubsence__item">
+                                    <div class="ubsence__item-container">
+                                        <img src="/public/images/ghost-cart-1.png" alt="cart_icon">
+                                        <div class="ubsence__container">
+                                            <h4 class="ubsence__container_title">Футболка UZcotton мужская</h4>
+                                            <div class="ubsence__box">
+                                                <p class="ubsence__box_text">Цвет: белый</p>
+                                                <p class="ubsence__box_text">Размер: 56</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="ubsense__icons">
+                                        <button
+                                        class="ubsense__icons-btn"
+                                        ><img src="/public/images/icon-hurt.svg" alt="fav-icon"></button>
+                                        <button 
+                                        class="ubsense__icons-btn"
+                                        >
+                                            <img src="/public/images/icon-trash.svg" alt="trash-icon">
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="ubsence__item">
+                                    <div class="ubsence__item-container">
+                                        <img src="/public/images/ghost-cart-2.png" alt="cart_icon">
+                                        <div class="ubsence__container">
+                                            <h4 class="ubsence__container_title">Силиконовый чехол картхолдер<br> (отверстия) для карт<br>, прозрачный кейс<br> бампер на Apple iPhone XR, MobiSafe</h4>
+                                            <div class="ubsence__box">
+                                                <p class="ubsence__box_text">Цвет: прозрачный</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="ubsense__icons">
+                                        <button
+                                        class="ubsense__icons-btn"
+                                        ><img src="/public/images/icon-hurt.svg" alt="fav-icon"></button>
+                                        <button 
+                                        class="ubsense__icons-btn"
+                                        >
+                                            <img src="/public/images/icon-trash.svg" alt="trash-icon">
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="ubsence__item">
+                                    <div class="ubsence__item-container">
+                                        <img src="/public/images/ghost-cart-3.jpg" alt="cart_icon">
+                                        <div class="ubsence__container">
+                                            <h4 class="ubsence__container_title">Карандаши цветные Faber-Castell<br> "Замок", набор 24 цвета, заточенные,<br> шестигранные, Faber-Castell</h4>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="ubsense__icons">
+                                        <button
+                                        class="ubsense__icons-btn"
+                                        ><img src="/public/images/icon-hurt.svg" alt="fav-icon"></button>
+                                        <button 
+                                        class="ubsense__icons-btn"
+                                        >
+                                            <img src="/public/images/icon-trash.svg" alt="trash-icon">
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
 
-                </div>
-
-
-
-            </section>
-            <section class="total__cart"></section>
-        </div>
-    </main>
-    <!-- Footer -->
-    <footer class="footer"></footer>
-</body>
+					</div>
+				</section>
+				<section class="total__cart"></section>
+			</div>
+		</main>
+		<!-- Footer -->
+		<footer class="footer"></footer>
+	</body>
 </html>
