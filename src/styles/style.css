@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-	padding: 34px 24px 50px;
+	padding: 32px 26px 54px 0px;
 }
 
 button {
@@ -150,10 +150,14 @@ button {
 .main {
 	border-radius: 24px 24px 24px 24px;
 	background: #f6f6fa;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 10px;
 }
 
 .orders {
-	max-width: 890px;
+	min-width: 890px;
 }
 
 .orders__title {
@@ -817,4 +821,92 @@ button {
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 16px;
+}
+
+/* total-cart */
+
+.total__cart {
+	padding: 16px 24px 24px 24px;
+	border-radius: 16px;
+	background: var(--system-white);
+	box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3),
+		0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+	margin-top: 22px;
+	min-width: 427px;
+}
+
+.sum {
+	margin-top: -3px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.sum__title {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 32px;
+	letter-spacing: -0.24px;
+}
+
+.sum__list {
+	margin-top: 9px;
+}
+
+.sum__item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.sum__item-text {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.point {
+	margin-top: 24px;
+}
+
+.point__box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.point__box-title {
+	font-family: Segoe UI;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px;
+}
+
+
+.point__box-adress{
+font-size: 13px;
+font-weight: 400;
+line-height: 16px; 
+}
+
+.point__inner {
+	margin-top: 4px;
+}
+
+
+.point__box-adress{
+	font-size: 13px;
+font-weight: 400;
+line-height: 16px;
+}
+
+.point__box-date{
+	color: var(--system-magenta);
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 16px;
+	border-bottom: 1px dashed #CB11AB;
+	width: fit-content;
+	margin-top: 3px;
 }
