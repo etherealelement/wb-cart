@@ -353,11 +353,17 @@ button {
 .order__counter-container {
 	border-radius: 8px;
 	background-color: #fff;
-	padding: 9px 8px 14px 4px;
+	width: 100px;
+	height: 44px;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
+
+.btn-active:active {
+	transform: translateY(-4px);
+} 
 
 .order__total-spn {
 	font-size: 16px;
@@ -365,13 +371,13 @@ button {
 
 
 .order__counter-btn {
-	font-size: 20px;
-	font-weight: 400;
-	line-height: 24px;
-	letter-spacing: -0.2px;
-	background-color: inherit;
+	transform: translateY(-2px);
 	border: none;
-	cursor: pointer;
+	background: inherit;
+}
+
+.btn-1{
+	transform: translateY(1px);
 }
 
 .order__counter-spn {
@@ -412,6 +418,7 @@ button {
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 16px;
+	transform: translateX(-11px);
 }
 
 .order__wrap_btn {
@@ -1154,6 +1161,8 @@ button {
 	}
 
 
+	
+
 	.delevery__descr {
 		display: flex;
 		flex-direction: column;
@@ -1439,7 +1448,7 @@ button {
 	}
 
 	.order__counter-text {
-		margin-right: 19px;
+		margin-right: 2px;
 	}
 
 	.price-1 {
@@ -2226,7 +2235,9 @@ button {
 	}
 
 	.order__counter-container {
-		margin-top: 8px;
+		margin-top: 5px;
+		width: 80px;
+		height: 32px;
 	}
 
 	.nth-3 {
@@ -2344,5 +2355,17 @@ button {
 	
 	.price-wrap-2 {
 		padding-top: 5px;
+	}
+
+	.counter-modile-decr {
+		transform: translateY(-1px);
+	}
+
+	.container-order-1 {
+		margin-top: 20px;
+	}
+
+	.container-order-2 {
+		margin-top: 4px;
 	}
 }
