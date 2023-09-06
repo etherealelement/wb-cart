@@ -13,9 +13,9 @@
 		<header class="header">
 			<div class="header__inner">
 				<div class="header__box">
-					<div class="header__burger">
+					<button class="header__burger">
 						<img
-							src="../public/catalog_burger.png"
+							src="../public/images/catalog-burger.svg"
 							alt="cart_icon"
 							class="header__burger_image"
 						/>
@@ -28,7 +28,7 @@
 						</svg>
 						</span>
 
-					</div>
+					</button>
 					<h1 class="header__title">Товары <br />и точка</h1>
 				</div>
 
@@ -94,10 +94,12 @@
 								<span class="custom-checkbox"></span>
 								Выбрать все
 							</label>
-							<img
+							<span class="orders__box-spn">
+								<img
 								src="../public/images/arrow-icon.svg"
 								alt="arrow-icon"
 							/>
+							</span>
 						</div>
 
 
@@ -592,7 +594,9 @@
                                 <h4 class="ubsence__title">
                                     Отсутствуют · 3 товара
                                 </h4>
-                                <img src="../public/images/arrow-icon.svg" alt="arrow-icon">
+                                <span class="orders__box-span">
+									<img src="../public/images/arrow-icon.svg" alt="arrow-icon">
+								</span>
                             </div>
 
                             <ul class="ubsence__list">
@@ -1015,6 +1019,7 @@
 			</p>
 		</footer>
 
+		<!-- mobile-panel -->
 		<div class="panel">
 			<div class="panel__inner">
 				<ul class="panel__list">
@@ -1064,5 +1069,29 @@
 				</ul>
 			</div>
 		</div>
+
+		<!-- side menu -->
+
+		<div class="side-menu">
+			<div class="menu">
+				<a href="#" class="menu-btn">
+					<span class="menu__btn-span">
+						<?xml version="1.0" ?><svg height="30px" id="Layer_1" style="enable-background:new 0 0 30 30;" version="1.1" viewBox="0 0 512 512" width="30px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z"/></svg>
+					</span>
+				</a>
+				<nav class="menu__list">
+					<a href="#" class="menu__item">Женщинам</a>
+					<a href="#" class="menu__item">Мужчинам</a>
+					<a href="#" class="menu__item">Детям</a>
+					<a href="#" class="menu__item">Подросткам</a>
+					<a href="#" class="menu__item">Товары для дома</a>
+					<a href="#" class="menu__item">Товары для офиса</a>
+				</nav>
+			</div>
+		</div>
+
+
+		<script src="./scripts/menu.js"></script>
+		<script src="./scripts/cart.js"></script>
 	</body>
 </html>
