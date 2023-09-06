@@ -618,6 +618,10 @@ button {
 	min-width: 176px;
 }
 
+.debit__subtitle-hide {
+	display: none;
+}
+
 /* delevery */
 
 .delevery {
