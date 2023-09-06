@@ -339,6 +339,22 @@ button {
 	color: #a0a0a4;
 }
 
+.order-hurt svg{
+	transition: all .3s;
+}
+
+.order-hurt:hover path{
+	fill: #CB11AB;
+}
+
+.order-trash svg {
+	transition: all .3s;
+}
+
+.order-trash:hover path {
+	fill: #F55123;
+}
+
 .orders__item-img {
 	min-width: 72px;
 	height: fit-content;
@@ -592,6 +608,7 @@ button {
 }
 
 .ubsense__icons-btn {
+	cursor: pointer;
 	background: inherit;
 	border: none;
 }
