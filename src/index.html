@@ -159,10 +159,23 @@
 												>
 													OOO Вайлдберриз
 												</p>
-												<img
+												<span class="order__container-span" id="place-1">
+													<img
 													src="../public/images/icon-20.svg"
 													alt="icon"
 												/>
+												</span>
+
+
+												<div class="place-tooltip" id="tooltip-place-1">
+													<div class="place-tooltip__inner">
+														<p class="place-tooltip__title">OOO «МЕГАПРОФСТИЛЬ»</p>
+														<p class="place-tooltip__text">ОГРН: 5167746237148</p>
+														<p class="place-tooltip__adress">129337, Москва, улица Красная Сосна, 2, корпус 1, стр. 1, помещение 2, офис 34</p>
+													</div>
+												</div>
+
+
 											</div>
 										</div>
 									</div>
@@ -222,6 +235,18 @@
 										<p class="order__total-ghost">
 											1051 сом
 										</p>
+										<div class="order__total-tooltip">
+											<ul class="total__tooltip-list">
+												<li class="total__tooltip-item">
+													<p class="tooltip__item-ghost">Скидка 55%</p>
+													<p class="tooltip__item-text">−300 сом</p>
+												</li>
+												<li class="total__tooltip-item">
+													<p class="tooltip__item-ghost">Скидка покупателя 10%</p>
+													<p class="tooltip__item-text">−30 сом</p>
+												</li>
+											</ul>
+										</div>
 									</div>
 								</div>
 							</li>
@@ -260,10 +285,20 @@
 												>
                                                 OOO Мегапрофстиль
 												</p>
-												<img
+												<span class="order__container-span" id="place-2">
+													<img
 													src="../public/images/icon-20.svg"
 													alt="icon"
 												/>
+
+												<div class="place-tooltip place-style-1" id="tooltip-place-2">
+													<div class="place-tooltip__inner">
+														<p class="place-tooltip__title">OOO «МЕГАПРОФСТИЛЬ»</p>
+														<p class="place-tooltip__text">ОГРН: 5167746237148</p>
+														<p class="place-tooltip__adress">129337, Москва, улица Красная Сосна, 2, корпус 1, стр. 1, помещение 2, офис 34</p>
+													</div>
+												</div>
+
 											</div>
 										</div>
 									</div>
@@ -321,9 +356,22 @@
 											class="order__total-spn"
 											>сом</span>
 										</p>
-										<p class="order__total-ghost">
+										<p class="order__total-ghost" id="ghost-2">
 											2 100 047 сом
 										</p>
+
+										<div class="order__total-tooltip tooltip-2" id="tooltip-2">
+											<ul class="total__tooltip-list">
+												<li class="total__tooltip-item">
+													<p class="tooltip__item-ghost">Скидка 55%</p>
+													<p class="tooltip__item-text">−300 сом</p>
+												</li>
+												<li class="total__tooltip-item">
+													<p class="tooltip__item-ghost">Скидка покупателя 10%</p>
+													<p class="tooltip__item-text">−30 сом</p>
+												</li>
+											</ul>
+										</div>
 									</div>
 								</div>
 							</li>
@@ -357,10 +405,20 @@
 												>
 													OOO Вайлдберриз
 												</p>
-												<img
+												<span class="order__container-span" id="place-3">
+													<img
 													src="../public/images/icon-20.svg"
 													alt="icon"
 												/>
+												<div class="place-tooltip place-style-2" id="tooltip-place-3">
+													<div class="place-tooltip__inner">
+														<p class="place-tooltip__title">OOO «МЕГАПРОФСТИЛЬ»</p>
+														<p class="place-tooltip__text">ОГРН: 5167746237148</p>
+														<p class="place-tooltip__adress">129337, Москва, улица Красная Сосна, 2, корпус 1, стр. 1, помещение 2, офис 34</p>
+													</div>
+												</div>
+
+												</span>
 											</div>
 										</div>
 									</div>
@@ -418,9 +476,21 @@
 										<p class="order__total-price">
 											494
 											<span class="order__total-spn"> сом</span>
-										<p class="order__total-ghost">
+										<p class="order__total-ghost" id="ghost-3">
 											950 сом
 										</p>
+										<div class="order__total-tooltip tooltip-3" id="tooltip-3">
+											<ul class="total__tooltip-list">
+												<li class="total__tooltip-item">
+													<p class="tooltip__item-ghost">Скидка 55%</p>
+													<p class="tooltip__item-text">−300 сом</p>
+												</li>
+												<li class="total__tooltip-item">
+													<p class="tooltip__item-ghost">Скидка покупателя 10%</p>
+													<p class="tooltip__item-text">−30 сом</p>
+												</li>
+											</ul>
+										</div>
 									</div>
 								</div>
 							</li>
@@ -875,6 +945,12 @@
 										Обратная доставка товаров на склад при отказе —
 									</p>
 									<p class="delevery__info-green">бесплатно</p>
+
+									<div class="delevery__info-tooltip" id="info-tooltip-1">
+										<div class="info-tooltip__inner">
+											<p class="info-tooltip__text">Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно</p>
+										</div>
+									</div>
 								</div>
 
 								<div class="delevery__mobile-info">
@@ -882,6 +958,7 @@
 									<div class="delevery__mobile-box">
 										<p class="delevery__mobile-text">
 											Обратная доставка товаров на склад<br> при отказе — <span class="delevery__mobile-green">бесплатно</span>
+										
 										</p>
 									</div>
 								</div>
@@ -1000,6 +1077,14 @@
 							<img src="../public/images/delvery_info.svg" alt="icon">
 						<div class="redelivery__box">
 							<p class="redelivery__text">Обратная доставка товаров на склад при отказе — <span class="redelivery__green">бесплатно</span></p>
+
+
+
+							<div class="delevery__info-tooltip tooltip-redelevery" id="redelivery-tooltip-1">
+								<div class="info-tooltip__inner">
+									<p class="info-tooltip__text">Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно</p>
+								</div>
+							</div>
 							
 						</div>
 						</div> 
@@ -1150,7 +1235,7 @@
 				</nav>
 			</div>
 		</div>
-
+		<script src="./scripts/tooltip.js"></script>
 		<script src="./scripts/total.js"></script>
 		<script src="./scripts/menu.js"></script>
 		<script src="./scripts/cart.js"></script>
