@@ -2652,10 +2652,10 @@ button {
 	left: 0;
 	width: 100%;
 	height: 100vh;
-	background: rgba(47, 46, 46, 0.5);
+	background:  rgba(5, 0, 10, 0.30);;
 	opacity: 1;
 	transition: 0.5s all;
-	display: flex;
+	display: none;
 	align-items: center;
 	justify-content: center;
 }
@@ -2722,4 +2722,57 @@ button {
 	position: absolute;
 	opacity: 0;
 	z-index: -1;
+}
+
+/* payments item */
+
+.popup-payment__content-label {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+.popup-payment__content-text {
+	margin-left: 5px;
+}
+
+.popup-payment__content-list {
+	margin-top: 13px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+
+.popup-payment__btn {
+	cursor: pointer;
+	margin-top: 139px;
+	color: var(--system-white, #FFF);
+	width: 164px;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	height: 44px;
+	background: var(--system-magenta);
+	border-radius: 8px;
+	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.08);
+	transition: all .3s ease-in-out;
+}
+
+.popup-payment__btn:hover {
+	background: #ed2ecd;
+}
+
+.popup-payment__btn:active {
+	transform: translateY(-4px);
+}
+
+
+.popup-payment__top-spn {
+	cursor: pointer;
+}
+
+.open-overlay {
+	display: flex;
+	opacity: 1;
 }
