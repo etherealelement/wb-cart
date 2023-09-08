@@ -1008,7 +1008,7 @@ button {
 
 .input__text {
 	background: none;
-	color: var(--system-gray);
+	color: #000;
 	font-size: 18px;
 	padding: 10px 10px 10px 5px;
 	display: block;
