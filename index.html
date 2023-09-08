@@ -969,7 +969,7 @@
 							<div class="payment__inner">
 								<div class="delevery__box">
                                     <h2 class="delevery__title">Способ оплаты</h2>
-                                    <button class="delevery__button">Изменить</button>
+                                    <button class="delevery__button" id="delevery-btn">Изменить</button>
                                 </div>
 								<div class="payment__box">
 									<img src="/public/images/payment-cart.svg" alt="payment_icon">
@@ -1241,14 +1241,14 @@
 			<div class="popup-payment">
 				<div class="popup-payment__top">
 					<h3 class="popup-payment__top-title">Способ оплаты</h3>
-					<span class="popup-payment__top-spn">
+					<span class="popup-payment__top-spn" id="popup-payments-close">
 						<img src="../public/images/search-close.svg" alt="icon-search">
 					</span>
 				</div>
 				<div class="popup-payment__content">
 					<ul class="popup-payment__content-list">
 						<li class="popup-payment__content-item">
-							<label>
+							<label class="popup-payment__content-label">
 								<input type="radio" class="popup-radio__real" name="payments" value="cart-sber">
 								<span class="popup-radio__custom"></span>
 								<img src="../public/images/payments-content-1.svg" alt="icon-payment">
@@ -1256,39 +1256,41 @@
 							</label>
 						</li>
 						<li class="popup-payment__content-item">
-							<label>
+							<label class="popup-payment__content-label">
 								<input type="radio" class="popup-radio__real" name="payments" value="cart-sber">
 								<span class="popup-radio__custom"></span>
-								<img src="../public/images/payments-content-1.svg" alt="icon-payment">
+								<img src="../public/images/payments-content-2.svg" alt="icon-payment">
 								<p class="popup-payment__content-text">1234 56•• •••• 1234</p>
 							</label>
 						</li>
 						<li class="popup-payment__content-item">
-							<label>
+							<label class="popup-payment__content-label">
 								<input type="radio" class="popup-radio__real" name="payments" value="cart-sber">
 								<span class="popup-radio__custom"></span>
-								<img src="../public/images/payments-content-1.svg" alt="icon-payment">
+								<img src="../public/images/payments-content-4.svg" alt="icon-payment">
 								<p class="popup-payment__content-text">1234 56•• •••• 1234</p>
 							</label>
 						</li>
 						<li class="popup-payment__content-item">
-							<label>
+							<label class="popup-payment__content-label">
 								<input type="radio" class="popup-radio__real" name="payments" value="cart-sber">
 								<span class="popup-radio__custom"></span>
-								<img src="../public/images/payments-content-1.svg" alt="icon-payment">
+								<img src="../public/images/payments-content-3.svg" alt="icon-payment">
 								<p class="popup-payment__content-text">1234 56•• •••• 1234</p>
 							</label>
 						</li>
 					</ul>
 				</div>
-				<div class="popup-payment__bottom"></div>
+				<div class="popup-payment__bottom">
+					<button class="popup-payment__btn">Выбрать</button>
+				</div>
 			</div>
 		</div>
-
+		<script src="./scripts/popups.js"></script>
 		<script src="./scripts/tooltip.js"></script>
 		<script src="./scripts/total.js"></script>
 		<script src="./scripts/menu.js"></script>
 		<script src="./scripts/cart.js"></script>
-		<script src="./scripts//checkboxes.js"></script>
+		<script src="./scripts/checkboxes.js"></script>
 	</body>
 </html>
