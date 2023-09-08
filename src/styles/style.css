@@ -327,7 +327,7 @@ button {
 	gap: 8px;
 	padding: 11px 16px 13px 16px;
 	border-radius: 8px;
-	background:  #fff;
+	background: #fff;
 	box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3),
 		0px 2px 10px 0px rgba(0, 0, 0, 0.15);
 }
@@ -353,15 +353,14 @@ button {
 	line-height: 16px;
 }
 
-
 .visible-tooltip-place {
 	visibility: visible;
 	opacity: 1;
 }
 
 #tooltip-place-2 {
-	   top: 16px;
-	   left: -135px;
+	top: 16px;
+	left: -135px;
 }
 
 .place-style-2 {
@@ -382,8 +381,9 @@ button {
 
 .info-tooltip__inner {
 	border-radius: 8px;
-	background: var(--background-white, #FFF);
-	box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.30), 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+	background: var(--background-white, #fff);
+	box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3),
+		0px 2px 10px 0px rgba(0, 0, 0, 0.15);
 	padding: 10px 16px 14px 16px;
 }
 
@@ -392,11 +392,11 @@ button {
 	opacity: 1;
 }
 
-.info-tooltip__text{
+.info-tooltip__text {
 	font-size: 13px;
-font-style: normal;
-font-weight: 400;
-line-height: 16px; 
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px;
 }
 
 .custom-checkbox::before {
@@ -932,7 +932,6 @@ line-height: 16px;
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 16px;
-	
 }
 
 .delevery__info-green {
@@ -1210,14 +1209,13 @@ line-height: 16px;
 	cursor: pointer;
 }
 
-.redelivery__box{
+.redelivery__box {
 	position: relative;
 }
 
-
 .tooltip-redelevery {
 	top: 37px;
-    right: 25%;
+	right: 25%;
 }
 
 .redelivery__visible {
@@ -2644,4 +2642,84 @@ line-height: 16px;
 	right: -40px;
 	top: 10px;
 	overflow: hidden;
+}
+
+/* popups */
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgba(47, 46, 46, 0.5);
+	opacity: 1;
+	transition: 0.5s all;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.popup-payment {
+	background: #fff;
+	width: 400px;
+	padding: 16px 24px 24px 16px;
+	border-radius: 20px;
+}
+
+.popup-payment__top {
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 28px; /* 140% */
+	letter-spacing: -0.2px;
+}
+
+.popup-payment__top {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* radio-button */
+
+.popup-radio__custom {
+	position: relative;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: #cb11ab;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	margin-right: 8px;
+	vertical-align: text-top;
+}
+
+.popup-radio__custom::before{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	content: "";
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	background: var(--background-smoky, #F6F6FA);
+	border-radius: 50%;
+	transition: .2s ease-in;
+	/* display: none; */
+
+}
+
+.popup-radio__real:checked + .popup-radio__custom::before {
+	/* display: block; */
+	transform: translate(-50%, -50%) scale(1);
+}
+
+
+.popup-radio__real {
+	width: 0;
+	height: 0;
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
 }
