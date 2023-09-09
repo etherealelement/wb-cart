@@ -521,6 +521,7 @@ button {
 	position: relative;
 }
 
+
 .order__container_place {
 	color: var(--system-gray);
 	font-size: 13px;
@@ -549,28 +550,38 @@ button {
 	justify-content: center;
 }
 
-.btn-active:active {
-	transform: translateY(-4px);
-}
+
 
 .order__total-spn {
 	font-size: 16px;
 }
 
 .order__counter-btn {
-	transform: translateY(-3px);
 	border: none;
 	background: inherit;
 	cursor: pointer;
+	display: block;
+}
+
+.btn-minus {
+	transform: translateY(1px);
+}
+
+.btn-disable {
+	color: rgba(0, 0, 0, 0.20);
 }
 
 .btn-1 {
 	transform: translateY(1px);
 }
 
+
 .order__counter-spn {
 	display: block;
-	min-width: 44px;
+	width: 44px;
+	background: none;
+	max-height: 23px;
+	border: none;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
@@ -581,17 +592,7 @@ button {
 	display: none;
 }
 
-.order__counter-btn-disable {
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 24px; /* 120% */
-	letter-spacing: -0.2px;
-	color: rgba(0, 0, 0, 0.2);
-	background-color: inherit;
-	border: none;
-	cursor: pointer;
-}
+
 
 .order__counter-btn-disable:active {
 	transform: translateY(-2px);
