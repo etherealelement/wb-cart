@@ -558,9 +558,10 @@ button {
 }
 
 .order__counter-btn {
-	transform: translateY(-2px);
+	transform: translateY(-3px);
 	border: none;
 	background: inherit;
+	cursor: pointer;
 }
 
 .btn-1 {
