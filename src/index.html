@@ -991,33 +991,35 @@
 								<h2 class="delevery__title">Получатель</h2>
 								<form class="form__box">
 									<div class="group">
-										<input type="text" required="required" class="input__text text-1">
+										<input type="text" required="required" class="input__text text-1" id="name-text">
 										<span class="highlight"></span>
 										<span class="bar"></span>
-										<label class="form__label">Имя</label>
+										<label class="form__label">Укажите имя</label>
 									</div>
 									<div class="group">
 										<input type="text" required="required" class="input__text text-2">
 										<span class="highlight"></span>
 										<span class="bar"></span>
-										<label class="form__label">Фамилия</label>
+										<label class="form__label">Введите фамилию</label>
 									</div>
 									</div>
 									<div class="form__bottom">
 										<div class="group">
-											<input type="email" required="required" class="input__text text-3">
+											<input type="text" required="required" class="input__text text-3" data-rule="email">
 											<span class="highlight"></span>
 											<span class="bar"></span>
 											<label class="form__label">Электронная почта</label>
+											<span class="form__span">Проверьте адресс электронной почты</span>
 										</div>
 										<div class="group">
-											<input type="phone" required="required" class="input__text text-4">
+											<input type="phone" required="required" class="input__text text-4" data-rule="phone">
 											<span class="highlight"></span>
 											<span class="bar"></span>
 											<label class="form__label">Телефон</label>
+											<span class="form__span">Проверьте адресс электронной почты</span>
 										</div>
 										<div class="group">
-											<input type="number" required="required" class="input__text input-3 text-5">
+											<input type="number" required="required" class="input__text input-3 text-5" data-rule="inn">
 											<span class="highlight"></span>
 											<span class="bar"></span>
 											<label class="form__label">ИНН</label>
@@ -1358,7 +1360,7 @@
 			</div>
 		</div>
 
-
+		<script src="./scripts/form.js"></script>
 		<script src="./scripts/popups.js"></script>
 		<script src="./scripts/tooltip.js"></script>
 		<script src="./scripts/total.js"></script>
