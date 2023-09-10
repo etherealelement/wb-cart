@@ -105,12 +105,13 @@
 
 
 						<div class="orders__mob">
-							<label class="checkbox__mob-wrap">
+							<label class="checkbox__mob-wrap" id="root-label" for="real-checkbox">
 								<input
 										type="checkbox"
 										class="real-checkbox"
+										id="real-checkbox"
 								/>
-								<span class="custom-checkbox__mob"></span>
+								<span class="custom-checkbox__mob" id="root-check"></span>
 								Выбрать все
 							</label>
 
@@ -486,6 +487,7 @@
 										<input
 												type="checkbox"
 												class="real-checkbox"
+												data-mobile
 										/>
 										<span class="custom-checkbox checkbox-1"></span>
 									</label>
@@ -493,9 +495,7 @@
 									<img src="../public/images/cart-item-1.png" alt="icon" class="item__mobile">
 									<div class="order__counter-container">
 										<button class="order__counter-btn counter-modile-decr">
-											<svg width="11" height="2" viewBox="0 0 11 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M10.0996 1.49088H0.919922V0.182281H10.0996V1.49088Z" fill="black" fill-opacity="0.2"/>
-												</svg>												
+											-											
 										</button>
 										<span class="order__counter-spn"
 										>1</span
@@ -503,10 +503,7 @@
 										<button
 												class="order__counter-btn-disable counter-modile-decr"
 										>
-										<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M10.0996 5.49088H6.1543V9.42642H4.85547V5.49088H0.919922V4.18228H4.85547V0.246735H6.1543V4.18228H10.0996V5.49088Z" fill="black"/>
-											</svg>
-											
+										+	
 										</button>
 									</div>
 									<span class="orders__mobile-spn">56</span>
@@ -547,16 +544,14 @@
 										<input
 												type="checkbox"
 												class="real-checkbox"
-										/>
-										<span class="custom-checkbox"></span>
+												data-mobile
+												/>
+										<span class="custom-checkbox" ></span>
 									</label>
 									<img src="../public/images/cart-item-2.png" alt="icon" class="item__mobile">
 									<div class="order__counter-container container-order-1">
 										<button class="order__counter-btn">
-											<svg width="11" height="2" viewBox="0 0 11 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M10.0996 1.49088H0.919922V0.182281H10.0996V1.49088Z" fill="black"/>
-												</svg>
-												
+											-
 										</button>
 										<span class="order__counter-spn"
 										>200</span
@@ -564,9 +559,7 @@
 										<button
 												class="order__counter-btn-disable dis-1 counter-modile-decr"
 										>
-										<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M10.0996 5.49088H6.1543V9.42642H4.85547V5.49088H0.919922V4.18228H4.85547V0.246735H6.1543V4.18228H10.0996V5.49088Z" fill="black"/>
-											</svg>
+										+
 											
 										</button>
 									</div>
@@ -608,16 +601,14 @@
 										<input
 												type="checkbox"
 												class="real-checkbox"
-										/>
+												data-mobile
+												/>
 										<span class="custom-checkbox checkbox-3"></span>
 									</label>
 									<img src="../public/images/cart-item-3.png" alt="icon" class="item__mobile">
 									<div class="order__counter-container container-order-2">
 										<button class="order__counter-btn">
-											<svg width="11" height="3" viewBox="0 0 11 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M10.0996 2.15753H0.919922V0.848938H10.0996V2.15753Z" fill="black"/>
-												</svg>
-												
+											-	
 										</button>
 										<span class="order__counter-spn"
 										>2</span
@@ -625,10 +616,7 @@
 										<button
 												class="order__counter-btn-disable dis-1"
 										>
-										<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M10.0996 6.15753H6.1543V10.0931H4.85547V6.15753H0.919922V4.84894H4.85547V0.913391H6.1543V4.84894H10.0996V6.15753Z" fill="black"/>
-											</svg>
-											
+										+	
 										</button>
 									</div>
 								</div>
