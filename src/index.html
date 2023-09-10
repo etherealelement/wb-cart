@@ -494,14 +494,12 @@
 									<!-- mobile-counter -->
 									<img src="../public/images/cart-item-1.png" alt="icon" class="item__mobile">
 									<div class="order__counter-container">
-										<button class="order__counter-btn counter-modile-decr">
+										<button class="order__counter-btn counter-modile-decr btn-minus">
 											-											
 										</button>
-										<span class="order__counter-spn"
-										>1</span
-										>
+										<input type="text" class="order__counter-spn" disabled value="1" id="input-1" data-price="522"></input>
 										<button
-												class="order__counter-btn-disable counter-modile-decr"
+												class="order__counter-btn-disable counter-modile-decr btn-plus"
 										>
 										+	
 										</button>
@@ -550,14 +548,12 @@
 									</label>
 									<img src="../public/images/cart-item-2.png" alt="icon" class="item__mobile">
 									<div class="order__counter-container container-order-1">
-										<button class="order__counter-btn">
+										<button class="order__counter-btn btn-minus">
 											-
 										</button>
-										<span class="order__counter-spn"
-										>200</span
-										>
+										<input type="text" class="order__counter-spn" disabled value="1" id="input-1" data-price="522"></input>
 										<button
-												class="order__counter-btn-disable dis-1 counter-modile-decr"
+												class="order__counter-btn-disable dis-1 counter-modile-decr btn-plus"
 										>
 										+
 											
@@ -607,14 +603,12 @@
 									</label>
 									<img src="../public/images/cart-item-3.png" alt="icon" class="item__mobile">
 									<div class="order__counter-container container-order-2">
-										<button class="order__counter-btn">
+										<button class="order__counter-btn btn-minus">
 											-	
 										</button>
-										<span class="order__counter-spn"
-										>2</span
-										>
+										<input type="text" class="order__counter-spn" disabled value="1" id="input-1" data-price="522"></input>
 										<button
-												class="order__counter-btn-disable dis-1"
+												class="order__counter-btn-disable dis-1 btn-plus"
 										>
 										+	
 										</button>
@@ -1317,6 +1311,7 @@
 				</div>
 			</div>
 		</div>
+		<script src="./scripts/counter-mobile.js"></script>
 		<script src="./scripts/counter.js"></script>
 		<script src="./scripts/form.js"></script>
 		<script src="./scripts/popups.js"></script>
