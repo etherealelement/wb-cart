@@ -183,11 +183,11 @@
 								<!-- counter -->
 								<div class="orders__wrap">
 									<div class="order__counter">
-										<div class="order__counter-container" data-counter>
+										<div class="order__counter-container max-2" data-counter>
 											<button class="order__counter-btn btn-minus">
 												−
 											</button>
-											<input type="text" class="order__counter-spn" disabled value="1" id="input-1"
+											<input type="text" class="order__counter-spn" disabled value="1" id="input-1" data-price="522"
 												></input>
 											
 											<button
@@ -305,7 +305,7 @@
 												−
 											</button>
 											<input type="text" class="order__counter-spn" disabled value="200" id="input-1"
-												></input>
+												data-price="10500"></input>
 											
 											<button
 												class="order__counter-btn  btn-plus"
@@ -421,7 +421,7 @@
 												−
 											</button>
 											<input type="text" class="order__counter-spn" disabled value="2" id="input-1"
-												></input>
+											data-price="494"	></input>
 											
 											<button
 												class="order__counter-btn  btn-plus"
@@ -1036,7 +1036,7 @@
 					<ul class="sum__list">
 						<li  class="sum__item">
 							<p class="sum__item-text">203 товара</p>
-							<p class="sum__item-text">2 302 048 сом</p>
+							<p class="sum__item-text" id="sum-total">2 302 048 сом</p>
 						</li>
 						<li  class="sum__item">
 							<p class="sum__item-text">Скидка</p>
@@ -1222,7 +1222,7 @@
 					<ul class="popup-payment__content-list">
 						<li class="popup-payment__content-item">
 							<label class="popup-payment__content-label">
-								<input type="radio" class="popup-radio__real" name="payments" value="cart-sber">
+								<input type="radio" class="popup-radio__real" name="payments" value="cart-sber" checked="true">
 								<span class="popup-radio__custom"></span>
 								<img src="../public/images/payments-content-1.svg" alt="icon-payment">
 								<p class="popup-payment__content-text">1234 56•• •••• 1234</p>
@@ -1278,7 +1278,7 @@
 					<ul class="delevery-popup__adress-list">
 						<li class="delevery-popup__adress-item">
 							<label class="popup-payment__content-label">
-								<input type="radio" class="popup-radio__real" name="payments" value="cart-sber">
+								<input type="radio" class="popup-radio__real" name="payments" value="cart-sber" checked="true">
 								<span class="popup-radio__custom"></span>
 								<p class="popup-payment__content-text">Бишкек, улица Табышалиева, 57</p>
 							</label>
