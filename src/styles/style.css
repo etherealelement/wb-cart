@@ -8,6 +8,7 @@ body {
 	font-family: Segoe UI, serif, sans-serif;
 	font-weight: 400;
 	background: #6725a8;
+	--webkit-appearance: checkbox;
 }
 
 .container {
@@ -566,6 +567,8 @@ button {
 .btn-minus {
 	transform: translateY(1px);
 }
+
+
 
 .btn-disable {
 	color: rgba(0, 0, 0, 0.20);

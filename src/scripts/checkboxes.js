@@ -6,7 +6,6 @@ window.addEventListener("DOMContentLoaded", () => {
     const debitSub = document.querySelector(".debit__subtitle");
     const checkboxPayment = document.getElementById("payments")
 
-
     labelCheck.addEventListener("click", () => {
         for (const checkbox of checkboxes) {
             if(checkbox.checked) {
@@ -42,4 +41,30 @@ window.addEventListener("DOMContentLoaded", () => {
             debitSub.classList.add("debit__subtitle-hide")
         }
     })
+
+    // mobile checkboxes
+
+    const checkedInputs = (checboxes) => {
+        for (const checkbox of checboxes) {
+            if(checkbox.checked) {
+                checkbox.removeAttribute("checked", "checked");
+            } else {
+                checkbox.setAttribute("checked", "checked")
+            }
+        }
+    } 
+
+
+    const checkboxesMob = document.querySelectorAll("[data-mobile]");
+    const rootCheck = document.getElementById("root-check");
+    const rootLabel = document.getElementById("root-label");
+
+    rootCheck.addEventListener("click", (e) => {
+        checkedInputs(checkboxesMob);
+    })
+
+    rootLabel.addEventListener("click", (e) => {
+        checkedInputs(checkboxesMob);
+    })
+
 })
