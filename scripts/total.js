@@ -4,6 +4,8 @@ window.addEventListener("DOMContentLoaded", () => {
     const totalSum = document.getElementById("total__sum");
     const debitContext = document.querySelector('.debit__text')
     const debitSub = document.querySelector(".debit__subtitle");
+    const debitMobile = document.querySelector(".debit__mobile-text");
+    const debitSubMob = document.querySelector(".debit__mobile-sub")
 
     debitContext.addEventListener("click", () => {
         button.textContent = `Оплатить ${totalSum.innerText} сом`;
@@ -12,5 +14,14 @@ window.addEventListener("DOMContentLoaded", () => {
             button.textContent = 'Заказать';
         }
     })
+
+    debitMobile.addEventListener("click", () => {
+        button.textContent = `Оплатить ${totalSum.innerText} сом`;
+    
+        if (debitSubMob.classList.contains("debit__subtitle-hide")) {
+            button.textContent = 'Заказать';
+        }
+    })
+
     
 })
