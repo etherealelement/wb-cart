@@ -448,7 +448,7 @@ button {
 }
 
 .hide__orders-list {
-	display: none;
+	display: none !important;
 }
 
 .header__burger-span {
