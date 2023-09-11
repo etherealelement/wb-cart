@@ -59,12 +59,20 @@ window.addEventListener("DOMContentLoaded", () => {
     const rootCheck = document.getElementById("root-check");
     const rootLabel = document.getElementById("root-label");
 
+    
+    rootLabel.addEventListener("click", (e) => {
+        for (const checkbox of checkboxesMob) {
+            if(checkbox.checked) {
+                checkbox.removeAttribute("checked", "checked");
+            } else {
+                checkbox.setAttribute("checked", "checked")
+            }
+        }
+    })
+
     rootCheck.addEventListener("click", (e) => {
         checkedInputs(checkboxesMob);
     })
 
-    rootLabel.addEventListener("click", (e) => {
-        checkedInputs(checkboxesMob);
-    })
 
 })
