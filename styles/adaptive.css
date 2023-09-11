@@ -1093,6 +1093,11 @@
 		margin-bottom: 40px;
 	}
 
+	.hide {
+		display: none !important;
+	}
+
+
 	.panel {
 		display: block;
 		background: var(--background-white, #fff);

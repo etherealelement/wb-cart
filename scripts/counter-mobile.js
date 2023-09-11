@@ -50,7 +50,7 @@ window.addEventListener("DOMContentLoaded", () => {
 				break;
 		}
 
-		document.querySelectorAll(".mobile__price-new").textContent = `${formatNumber(getItemSubTotalPrice(input))} сом`;
+		item.querySelector(".mobile__price-new").textContent = `${formatNumber(getItemSubTotalPrice(input))} сом`;
 	};
 
 	document.querySelectorAll(".orders__mobile-right").forEach((item) => {
@@ -60,7 +60,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 				if (Number(input.value) !== 1) {
 					calculateSeparateItem(
-						event.target.closest(".orders__mobile-right"),
+						event.target.closest(".orders__item-mobile"),
 						ACTION.MINUS
 					);
 					document.querySelector(".btn-minus").classList.add("btn-disable")
@@ -72,13 +72,18 @@ window.addEventListener("DOMContentLoaded", () => {
 			if (event.target.classList.contains("btn-plus")) {
 
 				calculateSeparateItem(
-					event.target.closest(".orders__mobile-right"),
+					event.target.closest(".orders__item-mobile"),
 					ACTION.PLUS
 				);
 			}
 		});
 	});
 
-
-
+	document.querySelector(".checkbox__mob-spn").addEventListener("click", () => {
+		if(document.querySelector(".orders__list").classList.contains("hide")) {
+			document.querySelector(".orders__list").classList.remove("hide")
+		} else {
+			document.querySelector(".orders__list").classList.add("hide")
+		}
+	})
 })
