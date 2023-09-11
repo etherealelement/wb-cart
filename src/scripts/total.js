@@ -15,11 +15,13 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     })
 
-    debitMobile.addEventListener("click", () => {
-        button.textContent = `Оплатить ${totalSum.innerText} сом`;
-    
-        if (debitSubMob.classList.contains("debit__subtitle-hide")) {
-            button.textContent = 'Заказать';
+    document.getElementById("mob-wrap").addEventListener("click", () => {
+        if (document.getElementById('mob-check').checked) {
+            debitSubMob.classList.add("debit__subtitle-hide");
+            button.textContent = `Оплатить ${totalSum.innerText} сом`;
+        } else {
+            debitSubMob.classList.remove("debit__subtitle-hide");
+            button.textContent = `Заказать`;
         }
     })
 
